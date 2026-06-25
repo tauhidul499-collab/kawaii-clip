@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaii Letter Clip</title>
+    <style>
+        body {
+            background-color: #fff5f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif;
+        }
+        .kawaii-clip-box {
+            background-color: #ffeef2;
+            border: 4px solid #ffb6c1;
+            border-radius: 20px;
+            padding: 30px 20px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+            box-shadow: 6px 6px 0px #ffb6c1;
+            animation: float 3s ease-in-out infinite;
+        }
+        .kawaii-clip-box::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 25px;
+            background-color: #ff8fa3;
+            border: 3px solid #ffb6c1;
+            border-radius: 8px;
+            box-shadow: 2px 2px 0px #ff6b8b;
+        }
+        .kawaii-title {
+            color: #ff6b8b;
+            font-size: 22px;
+            font-weight: bold;
+            margin: 10px 0 5px 0;
+        }
+        .kawaii-text {
+            color: #887b7d;
+            font-size: 15px;
+            margin: 0;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="kawaii-clip-box">
+        <p class="kawaii-title">Hello Cutie! 💕</p>
+        <p class="kawaii-text">Welcome to my kawaii space. 🎀✨</p>
+    </div>
+</body>
+</html>
